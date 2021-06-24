@@ -10,6 +10,7 @@ const randomNumber=()=>{
 }
 
 function HomePage(props) {
+    // Mỗi selector nên khai báo một thẻ riêng như bên dưới
     const hobbyList =useSelector(state=>state.hobby.list);
     const dispatch =useDispatch()
     console.log('Hobby List: ', hobbyList)
@@ -22,7 +23,12 @@ function HomePage(props) {
             title:`Hobby${newID}`,
         }
         //Dispath action to add new hobby to redux store
+        //Thự hiện sự thay đổi trên khung (vd: văn bản đã tạo từ trước)
         const action = addNewHobby(newHobby);
+
+        
+
+        // Thực hiện thay đổi
         dispatch(action);
     }
 

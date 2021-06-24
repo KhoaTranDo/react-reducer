@@ -1,10 +1,12 @@
 
+//initial State khởi tạo lần đầu
 const initialState={
     list:[],
     activeId: null
 }
 
 const hobbyReducer = (state=initialState,action)=>{
+    //Kiểm tra lệnh thay đổi
     switch(action.type){
         case "ADD_HOBBY":{
             const newList =[...state.list];
@@ -14,11 +16,9 @@ const hobbyReducer = (state=initialState,action)=>{
                 list:newList,
             }
         }
-
         case "SET_ACTIVE_HOBBY":{
             return state;
         }
-
         default:
             return state;
     }
