@@ -6,7 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 
 import store from "./store";
-
+//Pisum photo de ramdom photo
+//aribnb rule code
 ReactDOM.render(
   // Tạo redux bao bọc các nhánh với gia trị là store
   <Provider store={store}>
